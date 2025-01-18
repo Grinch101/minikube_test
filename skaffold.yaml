@@ -6,3 +6,4 @@ deploy:
   kubectl:
     manifests:
       - nginx-deployment.yaml
+      - mango-deployment.yaml
