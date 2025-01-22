@@ -1,0 +1,14 @@
+apiVersion: skaffold/v2beta26
+kind: Config
+metadata:
+  name: my-mongo-fe-be-app
+deploy:
+  kubectl:
+    manifests:
+      - secrets.yaml
+      - configs.yaml
+      - mongo-db-deploy.yaml
+      - mongo-db-service.yaml
+      - mongo-express-deploy.yaml
+      - mongo-express-service.yaml
+

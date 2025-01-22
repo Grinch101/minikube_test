@@ -1,0 +1,14 @@
+# minikube service mongo-express-service
+# assign a public IP in minikube to the loadbalance type service
+
+
+
+# kubectl create service loadbalancer mongo-express-service --tcp=8081:8081 --dry-run=client -o yaml > ./mongo-express-app/mongo-express-service.yaml
+# create the YAML file for the service
+
+
+# kubectl logs <podname> | jq
+
+# kubectl exec -it <podname for express>
+# ping mongodb-service
+
