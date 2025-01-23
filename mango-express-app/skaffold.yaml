@@ -5,6 +5,7 @@ metadata:
 deploy:
   kubectl:
     manifests:
+      - namespace.yaml
       - secrets.yaml
       - configs.yaml
       - mongo-db-deploy.yaml
